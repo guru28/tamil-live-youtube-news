@@ -13,6 +13,14 @@
   <meta property="og:image" content="https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"/>
   <meta property="og:site_name" content="My Company Name"/>
   <meta property="og:description" content="A description of our services and company">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
 
@@ -25,23 +33,23 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-12">
-      <div class="col-sm-6">
+      <div class="col-sm-6 iframe-container">
         <h3>News7</h3>
         <iframe class="resp-iframe youtube-video youtube-iframe" src="https://www.youtube.com/embed/_2Y5qHWRmHw?rel=0&autoplay=1&mute=1" frameborder="0" allowfullscreen allowscriptaccess="always" width="500" height="300">
         </iframe>
       </div>
-      <div class="col-sm-6">
+      <div class="col-sm-6 iframe-container">
         <h3>Sun News</h3>
         <iframe class="resp-iframe youtube-video youtube-iframe" src="https://www.youtube.com/embed/a5RnRNNDykw?rel=0&autoplay=1&mute=1" frameborder="0" allowfullscreen allowscriptaccess="always" width="500" height="300"></iframe>
       </div>
     </div>
     <div class="col-sm-12">
-      <div class="col-sm-6">
+      <div class="col-sm-6 iframe-container">
         <h3>Puthiya thalaimurai</h3>
         <iframe class="resp-iframe youtube-video youtube-iframe" src="https://www.youtube.com/embed/rDDfv3fZGVk?rel=0&autoplay=1&mute=1" frameborder="0" allowfullscreen allowscriptaccess="always" width="500" height="300">
         </iframe>
       </div>
-      <div class="col-sm-6">
+      <div class="col-sm-6 iframe-container">
         <h3>polimer</h3>
         <iframe class="resp-iframe youtube-video youtube-iframe" src="https://www.youtube.com/embed/jAz8VQpTRJg?rel=0&autoplay=1&mute=1" frameborder="0" allowfullscreen allowscriptaccess="always" width="500" height="300">
         </iframe>
@@ -56,6 +64,28 @@
     </div> -->
   </div>
 </div>
+
+<style type="text/css">
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .iframe-container {
+      overflow: hidden;
+      /* 16:9 aspect ratio */
+      padding-top: 56.25%;
+      position: relative;
+      margin-bottom: 10%;
+    }
+
+    .iframe-container iframe {
+       border: 0;
+       height: 100%;
+       left: 0;
+       position: absolute;
+       top: 0;
+       width: 100%;
+    }
+  }
+</style>
 
 </body>
 </html>

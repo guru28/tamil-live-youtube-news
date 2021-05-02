@@ -7,6 +7,14 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
 
@@ -19,18 +27,18 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-12">
-      <div class="col-sm-6">
+      <div class="col-sm-6 iframe-container">
         <h3>Republic TV</h3>
         <iframe class="resp-iframe youtube-video youtube-iframe" src="https://www.youtube.com/embed/f0-Y-eMhS1A?rel=0&autoplay=1&mute=1" frameborder="0" allowfullscreen allowscriptaccess="always" width="500" height="300">
         </iframe>
       </div>
-      <div class="col-sm-6">
+      <div class="col-sm-6 iframe-container">
         <h3>NDTV</h3>
         <iframe class="resp-iframe youtube-video youtube-iframe" src="https://www.youtube.com/embed/WB-y7_ymPJ4?rel=0&autoplay=1&mute=1" frameborder="0" allowfullscreen allowscriptaccess="always" width="500" height="300"></iframe>
       </div>
     </div>
     <div class="col-sm-12">
-      <div class="col-sm-6">
+      <div class="col-sm-6 iframe-container">
         <h3>News18</h3>
         <iframe class="resp-iframe youtube-video youtube-iframe" src="https://www.youtube.com/embed/ezjdZHmc4YQ?rel=0&autoplay=1&mute=1" frameborder="0" allowfullscreen allowscriptaccess="always" width="500" height="300">
         </iframe>
@@ -50,6 +58,28 @@
     </div> -->
   </div>
 </div>
+
+<style type="text/css">
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .iframe-container {
+      overflow: hidden;
+      /* 16:9 aspect ratio */
+      padding-top: 56.25%;
+      position: relative;
+      margin-bottom: 10%;
+    }
+
+    .iframe-container iframe {
+       border: 0;
+       height: 100%;
+       left: 0;
+       position: absolute;
+       top: 0;
+       width: 100%;
+    }
+  }
+</style>
 
 </body>
 </html>
